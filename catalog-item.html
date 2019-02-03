@@ -18,7 +18,11 @@
       <li><a href="contacts.html">Контакты</a></li>
     </ul>
     <ul class="user-navigation">
-      <li class="login-link">Вход</li>
+      <li>
+            <a class="login-link" href="login.html">
+              Вход
+            </a>
+          </li>
     </ul>
   </nav>
   </header>
@@ -80,8 +84,25 @@
   <section class="modal modal-login">
     <h2>Личный кабинет</h2>
     <p>Введите свой логин и пароль</p>
-    <!--Форма-->
-    <button class="modal-close">x</button>
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+<p class="login-password-info">
+      <label class="visually-hidden" for="login-field">Логин</label>
+      <input class="login-icon-user" type="text" name="login" id="login-field" value="" placeholder="Логин">
+</p>
+<p class="login-password-info">
+      <label class="visually-hidden" for="password-field">Пароль</label>
+      <input class="login-icon-password" type="password" name="password" id="password-field" value="" placeholder="Пароль">
+</p>
+<p class="login-password-info">
+      <label class="login-checkbox">
+      <input type="checkbox" name="remember" checked>
+Запомните меня
+</label>
+<a class="restore" href="restore.html">Я забыл пароль!</a>
+</p>
+<button class="button" type="submit">Войти</button>
+    </form>
+    <button class="modal-close">Закрыть</button>
   </section>
   </body>
   </html>
